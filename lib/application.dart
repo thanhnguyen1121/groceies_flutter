@@ -1,5 +1,6 @@
 import 'dart:developer' as developer;
 import 'package:flutter/material.dart';
+import 'package:groceries_flutter_app/pages/select_page/select_page.dart';
 import 'package:groceries_flutter_app/pages/splash/splash_page.dart';
 
 class Application extends StatefulWidget {
@@ -15,7 +16,8 @@ class _ApplicationState extends State<Application> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: SplashPage(),
+      home: SelectPage(),
+      // home: SplashPage(),
     );
   }
 }
