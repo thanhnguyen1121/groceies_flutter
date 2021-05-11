@@ -16,6 +16,11 @@ class _ApplicationState extends State<Application> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      darkTheme: ThemeData.dark().copyWith(
+        colorScheme: ColorScheme.dark(
+
+        )
+      ),
       home: SelectPage(),
       // home: SplashPage(),
     );

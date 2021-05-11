@@ -13,9 +13,17 @@ class _ExplorePageState extends State<ExplorePage> {
 
   @override
   Widget build(BuildContext context) {
-    return SafeArea(
-        child: Container(
-      child: Text("Explore_page"),
-    ));
+    return Scaffold(
+      appBar: AppBar(
+        backgroundColor: Colors.white,
+        elevation: 0.0,
+        title: Text("Find Products", style: Theme.of(context).textTheme.headline6,),
+        centerTitle:true,
+      ),
+      body: SafeArea(
+          child: Container(
+        child: Text("Explore_page"),
+      )),
+    );
   }
 }
